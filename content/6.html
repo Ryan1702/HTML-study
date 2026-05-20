@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Ryan的网页</title>
+        <style>
+            .red {
+                width:100px;
+                height:100px;
+                background-color:red;
+            }
+            .green {
+                width:200px;
+                height:200px;
+                background-color:green;
+                line-height:200px; /*垂直居中技巧 行高=盒子高*/
+                font-family:Songti SC; /*可以写多个用逗号隔开然后从左到右选择第一个可用的字体*/
+            }
+            .f {
+                font:bold 50px Songti SC;
+                /*是否倾斜 是否加粗 字体大小/行高 字体类型*/
+                /*字体大小和类型必须有 其他要按照顺序*/
+                text-indent:2em;
+                /*数字+px表示固定值*/
+                /*数字+em表示当前字号大小的倍数*/
+            }
+            #head {
+                text-align:center;/*left right均可以*/
+                /*居中的其实是文字内容*/
+                /*设置时需要设置给要被居中的部分的父亲*/
+                text-decoration:underline;
+                /*none无 line-through删除线 overline上划线*/
+            }
+        </style>
+    </head>
+    <body>
+        <h1 id="head">HTML</h1>
+        <div class="red">div1</div>
+        <div class="green">你好</div>
+        <!--font-size 字体大小 单位px-->
+        <!--font-weight 字体粗细 正常400加粗700-->
+        <!--font-style 字体倾斜 正常normal倾斜italic-->
+        <!--line-height 行高 有单位px表示固定值 无单位表示是原字体的几倍-->
+        <div class="f">
+            你我皆是黑马你我皆是黑马你我皆是黑马你我皆是黑马你我皆是黑马你我皆是黑马你我皆是黑马
+            你我皆是黑马你我皆是黑马你我皆是黑马你我皆是黑马你我皆是黑马你我皆是黑马你我皆是黑马
+            你我皆是黑马你我皆是黑马你我皆是黑马你我皆是黑马你我皆是黑马你我皆是黑马你我皆是黑马
+        </div>
+        <!-- 颜色表示法 -->
+        <!-- color:英文单词 -->
+        <!-- color:rgb(r,g,b) rgb都在0-255 -->
+        <!-- color:rgba(r,g,b,a) a表示透明度0-1 -->
+        <!-- color:rgb(r,g,b) -->
+        <!-- color:#RRGGBB 十六进制表示法 也可简写成三位#RGB前提是RRGGBB三对都重复00CCFF这样 -->
+    </body>
+</html>

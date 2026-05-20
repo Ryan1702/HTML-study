@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Ryan的网页</title>
+        <style>
+            div {
+                width:100px;
+                height:100px;
+                background-image:url(./diamond.jpeg);
+                background-repeat:no-repeat; /*repeat平铺默认 repeat-x沿着x轴平铺 repeat-y同理*/
+                background-position:center center; /*前水平后竖直*/
+                /*center left right top bottom 该方法可以颠倒顺序*/
+                /*或者数字 正数代表向下或者向右 只写一个表示水平 竖直默认居中*/
+                background-size:cover;
+                /*cover图片可以完全覆盖住整个盒子 contain盒子中装完整图片*/
+                /*百分比的话例如100%时图片宽度和盒子宽度一样 高度等比例*/
+                background-attachment:fixed;
+                /*固定背景图内容不随滚动而滚动*/
+                
+                /*也可以直接background:后面直接写多个属性用空格隔开 位置/缩放 除了这两个之间要按顺序且加入/其他无所谓*/
+            }
+        </style>
+    </head>
+    <body>
+        <div>123</div>
+        <!-- 块级元素 加宽高生效 独占一整行 宽度为父级元素的宽度 -->
+        <!-- 行内元素 加宽高不生效 不换行 尺寸由内容决定 -->
+        <!-- 行内块 加宽高生效 不换行 尺寸默认由内容决定 -->
+        <!-- 可以用display属性改变 块级元素block 行内元素inline 行内块inline-block -->
+    </body>
+</html>

@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Ryan的网页</title>
+        <style>
+            span div { /*两个元素 前者是外围标签 后者是内层标签 在前者中的所有后者包括儿子孙子都可以*/
+                color:red;
+            }
+            div>span { /*如上 但是只能是儿子不能是孙子或者其他*/
+                color:green;
+            }
+            /*并集选择器 可以用p,div,span这样逗号隔开写 同时写多个选择器*/
+            /*交集选择器 比如有两个选择器 标签选择器p和 类选择器box 可以直接连着写p.box来表示给都有这些标签的写*/
+        </style>
+    </head>
+    <body>
+        <span>
+            数字
+            <span>
+                <div>123</div>
+            </span>
+            <div>456</div>
+        </span>
+        <div>
+            数字
+            <span>123</span>
+            <p>
+                <span>456</span>
+            </p>
+        </div>
+    </body>
+</html>

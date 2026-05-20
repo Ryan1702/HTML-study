@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Ryan的网页</title>
+        <style>
+            a:link {
+                color:purple;
+            }
+            a:visited {
+                color:green;
+            }
+            a:hover {
+                color:pink;
+            }
+            a:active {
+                color:orange;
+            }
+            /*:link访问前 :visited访问后 :hover鼠标悬停 :active点击时 要按顺序写*/
+            .box {
+                font-size:15px;
+            }
+        </style>
+    </head>
+    <body>
+        <a href="#">百度一下</a>
+        <!--父类的文字属性会继承给子类 自己如果有也会用自己的-->
+        <div style="color:red;font-size:30px">
+            <p>123</p>
+            <p class="box">567</p>
+        </div>
+        <!--冲突的优先选后者 不冲突的都体现-->
+        <!--如果一个标签同时使用了多个选择器 选择器优先级顺序通配符小于标签小于类小于id小于行内-->
+        <!--如果一个标签同时使用了多个选择器 选择器优先级顺序最大的是!important 写在目标属性的分号前-->
+        <!--多个选择器写在一起的优先级比较 有!important且不是继承的最优先 继承的优先级最低 其他按照优先级高的个数多少比较 当前级个数相同则比较下一个优先级-->
+    </body>
+</html>
