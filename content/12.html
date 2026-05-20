@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Ryan的网页</title>
+        <style>
+            /*可以用以下来清除所有标签的自带样式*/
+            * {
+                margin:0;
+                padding:0;
+                box-sizing:border-box;/*顺便开启内减模式*/
+            }
+            /*以下是清除有序列表的小圆点*/
+            /* li {
+                list-style:none;
+            } */
+            .box {
+                overflow:hidden;/*超出部分隐藏*/
+                /*scroll 无论是否超出都有滚动条 纵向横向都有滚动条*/
+                /*auto 自动判断是否需要滚动条 如果有滚动条的话也只有纵向的*/
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box" style="width:100px;height:100px">
+            我真是服了我真是服了我真是服了我真是服了我真是服了我真是服了
+            我真是服了我真是服了我真是服了我真是服了我真是服了我真是服了
+            我真是服了我真是服了我真是服了我真是服了我真是服了我真是服了
+            我真是服了我真是服了我真是服了我真是服了我真是服了我真是服了
+            我真是服了我真是服了我真是服了我真是服了我真是服了我真是服了
+            我真是服了我真是服了我真是服了我真是服了我真是服了我真是服了
+        </div>
+        <!--如果上下兄弟都有margin会合并 取上下两个的较大值-->
+        <!--如果孩子加上外边距会导致错误加在父亲上-->
+        <!--解决方案 孩子加 上外边距 变为 父亲加 上内边距-->
+    </body>
+</html>

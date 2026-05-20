@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Ryan的网页</title>
+        <style>
+            li:first-child {
+                color:green;
+            }
+            li:last-child {
+                color:blue;
+            }
+            li:nth-child(3) {
+                color:pink;
+            }
+            /*li:nth-child(2n) 偶数*/
+            /*li:nth-child(2n+1) 奇数*/
+            /*li:nth-child(n+3) 第三个及以后的数*/
+            /*li:nth-child(-n+3) 第三个及以前的数*/
+
+            /*伪元素选择器是行内元素 content必须有如果是空就是留空格*/
+            div::before {
+                content:"LOVE";
+                width:100px;
+                height:100px;
+                background-color:yellow;
+            }
+            div::after {
+                content:"HATE";
+                width:100px;
+                height:100px;
+                background-color:yellow;
+            }
+        </style>
+    </head>
+    <body>
+        <ul>
+            <li>一</li>
+            <li>二</li>
+            <li>三</li>
+            <li>四</li>
+            <li>五</li>
+            <li>六</li>
+            <li>七</li>
+        </ul>
+        <div>123</div>
+    </body>
+</html>

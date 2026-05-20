@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Ryan的网页</title>
+        <style>
+            .box {
+                color:green;
+                /*width+height在内边界以内*/
+                width:200px;
+                height:200px;
+                margin:5px auto; /*外边距 第二个数auto表示居中*/
+                padding:10px; /*内边距*/
+                border:1px solid #000; /*边界厚度 边界类型 边界颜色*/
+                /*边界类型 solid实线 dashed虚线 dotted点线*/
+                /*border-top,border-bottom,border-left,border-right可以分别设置*/
+                /*padding同理也可以给四个方向分别设置*/
+                /*也可以一个padding后面跟着两个值就是 前者表示上下 后者表示左右*/
+                /*一个padding后面跟着三个值就是 前者表示上 中间表示左右 后者表示下*/
+                /*一个padding后面跟着四个值就分别是 上 右 下 左*/
+                /*记忆方法 多个值就从上面开始取值 遇到没有取到的边跟对边一样*/
+                /*盒子尺寸=内容+内边距+border*/
+                /*所以加border和padding会撑大盒子*/
+                /*如果不想要撑大盒子可以加以下这句话*/
+                box-sizing:border-box;
+                /*margin类似padding*/
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box">123</div>
+    </body>
+</html>

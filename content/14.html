@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Ryan的网页</title>
+        <style>
+            * {
+                margin:0;
+                padding:0;
+                box-sizing:border-box;
+            }
+            .box {
+                background-color:#000;
+                width:100px;
+                height:100px;
+                margin:20px auto;
+                border-radius:5px;/*圆角的半径*/
+                /*多个值就从左上角开始取值 遇到没有取到的角跟对角一样*/
+                box-sizing:border-box;
+            }
+            .cir {
+                background-color:green;
+                border-radius:50%;/*圆角半径在长宽边上分别占长宽的百分之多少 如果是长方形的话就椭圆角*/
+                width:100px;
+                height:100px;
+                margin:20px auto;
+            }
+            .bar {
+                background-color:blue;
+                border-radius:40px;
+                width:500px;
+                height:80px;
+                margin:20px auto;
+            }
+            .shadow {
+                /*属性值有 X轴偏移量 Y轴偏移量 模糊半径 扩散半径 颜色 内外阴影 (inset) 前两个是必须*/
+                /*默认阴影是外阴影 内阴影要在最后面加个inset*/
+                /*模糊半径越大越柔和*/
+                box-shadow:5px 5px 5px 1px rgba(0,0,0,0.5);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box shadow"></div>
+        <div class="cir shadow"></div>
+        <div class="bar"></div>
+    </body>
+</html>
