@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Ryan的网页</title>
+        <style>
+            .box {
+                display:flex;
+
+                background-color:pink;
+                height:500px;
+
+                /*以下是主轴对齐方式*/
+                justify-content:flex-start;/*左对齐 默认*/
+                /*flex-end 右对齐*/
+                /*center 居中*/
+                /*space-between 等间距隔开 头尾贴边*/
+                /*space-around 每个的左右两侧都有等间距空白*/
+                /*space-evenly 等间距隔开 头尾也有等间距*/
+
+                /*以下是侧轴对齐方式*/
+                align-items:stretch;/*拉伸 默认值 只有没设定该方向长度才能拉伸*/
+                /*center 居中*/
+                /*flex-start 上对齐*/
+                /*flex-end 下对齐*/
+                /*可以用align-self改变单个*/
+
+                /*默认情况下 主轴方向靠内容撑开 侧轴方向自动拉伸*/
+                /*默认情况下 主轴是从左至右 侧轴是从上至下*/
+
+                /*flex-direction属性 改变主轴方向*/
+                /*row 水平方向从左到右 默认*/
+                /*column 竖直方向从上到下*/
+
+                /*flex-wrap属性*/
+                /*默认是nowrap*/
+                flex-wrap:wrap;
+            }
+            .box div {
+                /* height:100px; */
+                background-color:yellow;
+            }
+            .box div:nth-child(2n+1) {
+                /*flex属性 控制主轴方向的尺寸*/
+                flex:1;
+            }
+            .fx {
+                display:flex;
+                height:500px;
+                background-color:grey;
+                flex-wrap:wrap;
+            }
+            .fx div {
+                background-color:orange;
+                width:200px;
+
+                /*行对齐方式 对单行不生效*/
+                /*用法同justify-content*/
+                /*和align-items的区别是他在处理多行的时候更好*/
+                align-content:center;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box">
+            <div>123</div>
+            <div>456</div>
+            <div>789</div>
+        </div>
+        <div class="fx">
+            <div>123</div>
+            <div>456</div>
+            <div>789</div>
+            <div>123</div>
+            <div>456</div>
+            <div>789</div>
+            <div>123</div>
+            <div>456</div>
+            <div>789</div>
+            <div>123</div>
+            <div>456</div>
+            <div>789</div>
+            <div>123</div>
+            <div>456</div>
+            <div>789</div>
+            <div>123</div>
+            <div>456</div>
+            <div>789</div>
+        </div>
+    </body>
+</html>

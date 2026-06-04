@@ -4,8 +4,32 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Ryan的网页</title>
+        <style>
+            .box {
+                float:left;
+                width:100px;
+                height:100px;
+                background-color:black;
+            }
+            .boxx {
+                float:right;
+                width:200px;
+                height:200px;
+                background-color:black;
+            }
+            /*float特点 顶对齐 行内块格式 会脱标*/
+            /*没有指定高度子集无法撑开父集高度 需要用双伪元素法 如下*/
+            .clearfix::before, .clearfix::after {
+                content:"";
+                display:table;
+            }
+            .clearfix::after {
+                clear:both;
+            }
+        </style>
     </head>
     <body>
-        
+        <div class="box"></div>
+        <div class="boxx"></div>
     </body>
 </html>
