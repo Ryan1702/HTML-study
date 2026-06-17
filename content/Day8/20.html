@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Ryan的网页</title>
+        <style>
+            div {
+                position:absolute;
+            }
+            .box1 {
+                background-color:skyblue;
+                width:100px;
+                height:100px;
+                z-index:1;
+                /*z-index 默认为0 越大的在越上层 默认是后来者居上*/
+            }
+            .box2 {
+                background-color:pink;
+                width:100px;
+                height:100px;
+                left:50px;
+                top:50px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box1"></div>
+        <div class="box2"></div>
+    </body>
+</html>
