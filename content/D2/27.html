@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Ryan的网页</title>
+        <style>
+            .box {
+                width:200px;
+                height:200px;
+                background-color:pink;
+                animation:change 1s infinite alternate;
+                /*动画名称 动画时长 (前两个必须) 速度曲线 延迟时间 重复次数 动画方向 执行完毕时状态*/
+                /*
+                以下是剩下五个
+                linear 匀速 steps(n) 分成n步完成
+                ns 等待ns开始播放
+                n 重复n次 infinite 无限循环
+                alternate 反向播放 (前面要有infinite 变成循环)
+                forwards 执行完毕时停留在结束状态
+                backwards 开始状态 (默认)
+
+                这七个属性拆分出来都是以animation-开头
+                分别是
+                name
+                duration
+                timing-function
+                delay
+                iteration-count
+                direction
+                fill-mode
+
+                多一个 play-state 暂停动画 paused 为暂停 配合:hover使用
+
+                多组动画可以
+                animation:
+                    run xxx xxx xxx
+                    move xxx xxx xxx
+                ;
+                表示可以同时执行两个动画
+                */
+            }
+            .box:hover {
+                animation-play-state:paused;
+            }
+            /*如果动画的开始状态的样式与默认相同可省略*/
+            @keyframes change {
+                from {
+                    width:200px;
+                }
+                to {
+                    width:800px;
+                }
+            }
+            /* 0% {} 20% {} 100% {} 百分比是动画时长的百分比*/
+        </style>
+    </head>
+    <body>
+        <div class="box"></div>
+    </body>
+</html>

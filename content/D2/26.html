@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Ryan的网页</title>
+        <style>
+            .cube {
+                position:relative;
+                width:200px;
+                height:200px;
+                margin:100px auto;
+                transition:all 2s;
+                transform-style:preserve-3d; /*父级写这句话*/
+            }
+            .cube div {
+                position:absolute;
+                left:0;
+                top:0;
+                width:200px;
+                height:200px;
+            }
+            .front {
+                background:yellow;
+                transform:translateZ(100px);
+            }
+            .back {
+                background:green;
+                transform:translateZ(-100px);
+            }
+            .cube:hover {
+                transform:rotateY(90deg)
+            }
+        </style>
+    </head>
+    <body>
+        <div class="cube">
+            <div class="front"></div>
+            <div class="back"></div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Ryan的网页</title>
+        <style>
+            .fa {
+                perspective:1000px; /*视距 造成近大远小 近实远虚的效果*/
+                /*给想要看到效果的直接父级加这个标签 后面跟上800-1200px 这个数值其实是人与电脑屏幕的距离*/
+            }
+            .box {
+                width:200px;
+                height:200px;
+                margin:100px auto;
+                background-color:pink;
+                transition:all 1s;
+            }
+            .box:hover {
+                transform:translate3d(100px,200px,300px) rotateX(60deg) rotateY(60deg);
+                /*必须写满三个数 表示xyz轴 z轴正方向为指向电脑面外*/
+                /*translateX/Y/Z 也是可以的 百分比也可以 类似平面的平移*/
+                /*rotateZ跟平面旋转一样 沿着z轴旋转*/
+                /*rotateX 正数 上侧往后倒的方向*/
+                /*rotateY 正数 右侧往后倒的方向*/
+                /*左手法则 左手握住旋转轴 大拇指指向该轴正方向 旋转如果与四指方向相同 数值为正*/
+                /*x轴水平向右正方向 y轴竖直向下正方向 z轴出屏幕正方向*/
+                /*scale3d(x,y,z) scaleX/Y/Z 一个数字表示缩放倍数*/
+            }
+        </style>
+    </head>
+    <body>
+        <div class="fa">
+            <div class="box"></div>
+        </div>
+    </body>
+</html>
