@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Ryan的网页</title>
+        <style>
+            .father {
+                width:500px;
+                height:300px;
+                margin:100px auto;
+                border:1px solid #000;
+            }
+            .son {
+                width:200px;
+                height:100px;
+                background-color:pink;
+                background-image: linear-gradient(0deg,red 60%,green);
+                /*如果第一个填的是度数默认从y轴正半轴的方向顺时针转相应角度*/
+                /*或者可以把角度换为 to right/left/top/bottom*/
+                /*可以写更多种颜色 颜色后面跟着的百分比是渐变结束的位置*/
+
+                /*radial-gradient(半径 at 圆心位置,color1 终点位置,color2 终点位置)*/
+                /*圆心位置表示为 方位名词 水平位置+竖直位置 或者 像素单位 水平px+纵向px*/
+                /*两条半径就是椭圆渐变*/
+                transition:all 1s;
+            }
+            .father:hover .son {
+                transform:translate(200px,100px) rotate(180deg) scale(1.5) skew(10deg);
+                /*这个只是改变位置 过渡是由上面的transition决定的*/
+                /*translate 平移 (50%,100%) 表示平移的水平距离和竖直距离分别占该格子宽高的百分之多少*/
+                /*只有一个数值就水平移动 还可以改成translateX或者translateY变成一个参数单向移动*/
+
+                /*rotate 旋转角度 正数为顺时针旋转 单位为度 deg*/
+                transform-origin:right center;
+
+                /*水平原点位置 竖直原点位置*/
+                /*方位名词 left right top bottom center*/
+
+                /*复合属性 先平移再旋转 因为旋转会导致坐标轴的旋转影响平移*/
+                /*多重转换 以第一个操作的轴向为准*/
+
+                /*scale 缩放 取值大于1 放大 小于1 缩小*/
+
+                /*skew 倾斜 角度度数 deg 正数往左倾斜 负数往右倾斜*/
+            }
+        </style>
+    </head>
+    <body>
+        <div class="father">
+            <div class="son"></div>
+        </div>
+    </body>
+</html>
