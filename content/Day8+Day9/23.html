@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="这里是描述"> <!--优先级2-->
+        <meta name="keywords" content="这里是关键词"> <!--优先级3-->
+        <title>Ryan的网页</title> <!--优先级1-->
+        <link rel="shortcut icon" href="../Day1/diamond.jpeg"> <!--改变上方小栏目的小图-->
+        <style>
+            img {
+                width:200px;
+                height:200px;
+                transition:all 1s;
+                /*transtion要附给原来的*/
+                opacity:1;
+                /*透明度 0 完全透明 1 完全不透明 之间的小数表示半透明程度*/
+                cursor:move;
+                /*光标类型 用来提示用户功能 default 默认 pointer 小手效果 text 文字效果 move 十字光标*/
+            }
+            img:hover {
+                width:500px;
+                height:500px;
+                opacity:0.5;
+            }
+        </style>
+    </head>
+    <body>
+        <img src="../Day1/diamond.jpeg" alt="">
+    </body>
+</html>

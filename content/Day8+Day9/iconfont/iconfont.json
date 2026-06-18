@@ -1,0 +1,30 @@
+{
+  "id": "5197723",
+  "name": "点赞",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "47837674",
+      "name": "爱心",
+      "font_class": "aixin",
+      "unicode": "e6d9",
+      "unicode_decimal": 59097
+    },
+    {
+      "icon_id": "47837676",
+      "name": "导入",
+      "font_class": "daoru",
+      "unicode": "e6da",
+      "unicode_decimal": 59098
+    },
+    {
+      "icon_id": "47837686",
+      "name": "点赞",
+      "font_class": "dianzan",
+      "unicode": "e6db",
+      "unicode_decimal": 59099
+    }
+  ]
+}
