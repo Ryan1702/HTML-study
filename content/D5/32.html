@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Ryan的网页</title>
+        <!--
+        <link rel="stylesheet" media="(max-width:768px)" href="./pink.css">
+        <link rel="stylesheet" media="(min-width:1200px)" href="./green.css">
+        可以用以上两行来在link中使用媒体查询 达到和下面一样的效果 media后面的()不能省略
+        -->
+        <style>
+            /*网页宽度小于等于768px的执行这个*/
+            @media (max-width:768px) {
+                body {
+                    background-color:pink;
+                }
+            }
+            /*网页宽度大于等于1200px的执行这个*/
+            @media (min-width:1200px) {
+                body {
+                    background-color:green;
+                }
+            }
+            /*可以有多个max和min 但是可以多次进入符合要求的 保留最后一个进入的 遵循层叠性 后面的会覆盖前面的*/
+            /*所以min-width要从小到大写*/
+            /*max-width要从大到小写*/
+        </style>
+    </head>
+    <body>
+        
+    </body>
+</html>

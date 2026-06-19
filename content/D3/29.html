@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Ryan的网页</title>
+        <style>
+            * {
+                margin:0;
+                padding:0;
+            }
+            /*视口宽度为320px时 网页字体大小设定为宽度的1/10 32*/
+            @media (width:320px) {
+                html {
+                    font-size:32px;
+                }
+            }
+            /*视口宽度为375px时 网页字体大小设定为宽度的1/10 37.5*/
+            @media (width:375px) {
+                html {
+                    font-size:37.5px;
+                }
+            }
+            /*视口宽度为375px时 网页字体大小设定为宽度的1/10 41.4*/
+            @media (width:414px) {
+                html {
+                    font-size:41.4px;
+                }
+            }
+            .box {
+                width:5rem;
+                height:3rem;
+                /*真正的宽度和高度为 rem前的数字乘html的字号大小*/
+                background-color:pink;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box"></div>
+    </body>
+</html>
