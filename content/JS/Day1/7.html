@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Ryan的网页</title>
+    </head>
+    <body>
+        <script>
+            //以下是隐形转换
+            console.log(1+1)
+            console.log('1'+1) //加法中 有一个字符串 全都变为字符串
+            console.log('2'-1) //其他符号 有一个数字 全都变为数字
+            console.log(+'123') //加号可以转换为数字型
+            //以下是显形转换
+            let str='123'
+            console.log(str)
+            console.log(Number(str))
+            let num1=Number(prompt('输入第一个数'))
+            let num2=+prompt('输入第二个数')
+            //NaN也是number类型
+            console.log(num1,num2)
+            console.log(parseInt('12px'))
+            console.log(parseInt('12.2px'))
+            console.log(parseInt('12.98px'))
+            console.log(parseFloat('12.98px'))
+        </script>
+    </body>
+</html>

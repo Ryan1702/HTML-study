@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Ryan的网页</title>
+    </head>
+    <body>
+        <script>
+            let a=[1,2,3,4,5]
+            console.log(a[0])
+            console.log(a[2])
+            console.log(a.length) // 数组长度
+            const G=9.8 // 常量 不能改值 且不能只声明不赋值
+            console.log(G)
+            // 数字都是一种类型
+            // NaN not a number 所有没有定义的 数学式子错误返回NaN 或者带有NaN的计算都是NaN
+            let str='单引号'
+            let str2="双引号"
+            let str3=`反引号`
+            let sen='我真的很\'爱\'你'
+            let sen2='我真的很"爱"你'
+            console.log(str)
+            console.log(str2)
+            console.log(str3)
+            console.log(sen)
+            console.log(sen2)
+            let age=18
+            console.log('我今年'+age+'岁了')
+            //模板字符串必须用反引号
+            console.log(`我今年${age}岁了`)
+            let flag=true
+            console.log(flag) // boolean类型
+            console.log(3>4)
+            let num
+            console.log(num) // 未定义类型 未赋值
+            let obj=null
+            console.log(obj) // 空值 已赋值但为空
+            console.log(undefined+1)
+            console.log(null+1) // null 被当成0了
+            console.log(typeof str)
+            console.log(typeof age)
+            console.log(typeof flag)
+            console.log(typeof num)
+            console.log(typeof obj)
+        </script>
+    </body>
+</html>
